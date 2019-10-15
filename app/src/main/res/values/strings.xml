@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CountrySelector</string>
+
+    <string name="base_url_restcountries">https://restcountries.eu/rest/v2/</string>
+
+    <string name="fragment_pick_country_explanation">Click to the button to select and view details of a country.</string>
+    <string name="fragment_pick_country_button_action">View Countries</string>
+    <string name="black_theme">Black Theme</string>
+    <string name="pick_a_country">Pick A Country</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="region"><![CDATA[<b>Region : </b>]]></string>
+    <string name="subregion"><![CDATA[<b>Subregion : </b>]]></string>
+    <string name="capital"><![CDATA[<b>Capital : </b>]]></string>
+    <string name="population"><![CDATA[<b>Population : </b>]]></string>
+    <string name="currencies"><![CDATA[<b>Currencies : </b>]]></string>
+    <string name="languages"><![CDATA[<b>Languages : </b>]]></string>
+    <string name="timezones"><![CDATA[<b>Timezones : </b>]]></string>
+    <string name="oops">Oops…</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="error_no_internet">Cannot access to server, please check your internet.</string>
+    <string name="error_not_found">Could not find the requested data, please try again later.</string>
+    <string name="error_default_failed_details">Could not get the details, please try again later.</string>
+</resources>

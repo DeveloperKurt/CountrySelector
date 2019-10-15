@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?themePrimary"
+    tools:context=".ui.fragmentpickcountry.FragmentPickCountry">
+
+
+    <TextView
+        android:id="@+id/pick_country_tv_button_action"
+        style="@style/CountrySelector.HeaderTextView"
+        android:text="@string/fragment_pick_country_button_action"
+        app:layout_constraintEnd_toEndOf="@+id/pick_country_display_countries_fab"
+        app:layout_constraintStart_toStartOf="@+id/pick_country_display_countries_fab"
+        app:layout_constraintTop_toBottomOf="@+id/pick_country_display_countries_fab" />
+
+    <TextView
+        android:id="@+id/pick_country_tv_explanation"
+        style="@style/CountrySelector.ExplanationTextView"
+        android:text="@string/fragment_pick_country_explanation"
+        app:layout_constraintEnd_toEndOf="@+id/pick_country_tv_button_action"
+        app:layout_constraintStart_toStartOf="@+id/pick_country_tv_button_action"
+        app:layout_constraintTop_toBottomOf="@+id/pick_country_tv_button_action" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_view_countries"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="pick_country_tv_explanation,pick_country_tv_button_action,pick_country_display_countries_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pick_country_display_countries_fab"
+        style="@style/CountrySelector.GlobeFloatingActionButton"
+        app:fabCustomSize="@dimen/large_fab_size"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:maxImageSize="@dimen/large_fab_image_size" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
