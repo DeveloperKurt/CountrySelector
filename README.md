@@ -1,6 +1,6 @@
 # Country Selector
 
-Country selector allows you to get quick information of a country.
+Country selector allows you to get quick information about a country.
 
 
 | <a href="https://ibb.co/ZMRnhXj"><img src="https://i.ibb.co/QK726Qg/Country-Selector-Screenshots.png" alt="Country-Selector-Screenshots" border="0"></a>  
@@ -16,6 +16,8 @@ Country selector allows you to get quick information of a country.
   Which will help the companies who are considering hiring me to have a cleaner perspective on my skill level.
 <br>
 You can find brief technical information about the project here.
+<br>
+<br>
 
 ## Model-View-ViewModel
 
@@ -23,11 +25,15 @@ This project uses the [recommended](https://developer.android.com/jetpack/docs/g
 Which helps to have a nice, maintainable structure that is easy to unit test since the modules are independent.
 
 Also, it helps a lot to have a lifecycle aware inheritable ViewModel class that is working perfectly with also lifecycle aware LiveData class. 
+<br>
+<br>
 
 ## Dependency Injection
 This project also uses the dependency injection since it drastically helps with unit testing, maintaining loosely coupled code and having reusable modules.
 
 As a framework, Dagger 2 had been preferred since it has no effect on performance, reduces boilerplate code (even though not in this particular case (: ) and also recommended and supported by Google. 
+<br>
+<br>
 
 ## Testing
 
@@ -40,12 +46,17 @@ Following libraries had been preferred due to their quality and popularity:
  - Hamcrest
  - Espresso
  - UIAutomator
+<br>
+<br>
 
 ## Custom Themes & Styles
 
 In designing of the UI, custom themes had been created and view attributes like color, dimensions, strings are **not** hardcoded which is allowing additional themes to be created easily.
 
 Views has their own styles which reduces the copying and pasting the attributes and provides consistency when creating similar views.
+
+<br>
+<br>
 
 ## Designing
 
@@ -69,15 +80,17 @@ Android error icon is designed by me by getting inspired of an another design.
 |<a href="https://imgbb.com/"><img src="https://i.ibb.co/7ncmqcN/globe.png" alt="Icon" height="250" width="250" border="0"></a>  |<a href="https://imgbb.com/"><img src="https://i.ibb.co/QNyqdKN/android-crash-ic.png" alt="android-crash-ic" height="250" width="250" border="0"></a>  |
 |--|--|
 
-
+<br>
+<br>
 
 ## Documentation Of The Codes
 
 The project is well-documented by using javadoc and it is ready to be exported as HTML. 
-
+<br>
+<br>
+<br>
 
 # Design Insight
-
 
 ## Integration Of Countries To The Project
 When I was planning to integrate a list of countries and their flags to the application, I have decided I should demonstrate how I would approach a changeable big data (since it wasn't actually a big data, I have preferred to have a fast scroller with an alphabetical letter indicator in favor of the pagination) .
@@ -87,6 +100,7 @@ And I have added the images of the every flag by using a batch drawable importer
 
 I thought that this list could be used in multiple places. Therefore I have thought that if it would be a DialogFragment it would not only be more easy to access by the users but also would be much more easy to implement on the other screens. So I proceeded with that idea and used observer pattern in the DialogFragment to have flexibility on implementation since every screen might want to take a different action when a country is clicked.
 
+<br>
 
 ## Retrieving The Country Details
 
@@ -95,11 +109,14 @@ I have used Retrofit to send GET requests since it is reliable, easy and compati
 I have handled the exceptional cases like slow network connection, no internet connection, not found responses, etc. and added a modern informing UI to convey the error.
 
 I have also written singleton ScheduledExecutorService and Retrofit service classes by considering the scalability, reusability, and performance.
-
+<br>
+<br>
 ## Dagger 2
 
 I have not created any subcomponent like MainActivity component because there is not a dependency in the application that should not be accessed by the another lifecycle (no login or auth system) and there is also not a chain of dependencies that are only being used to satistfy one class.
 
+<br>
+<br>
 
 ## Further Development
 
